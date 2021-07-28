@@ -21,7 +21,6 @@
         list-style: none;
 
         li {
-            font-size: 3rem;
             margin: .1rem 0;
             cursor: pointer;
             font-size: 4rem;
@@ -42,4 +41,12 @@
 .menu-active {
     left: 0;
     transition: left .5s;
+}
+
+@media screen and (max-width: 950px) {
+
+    li {
+        font-size: 3rem !important;
+    }
+
 }

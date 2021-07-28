@@ -11,3 +11,19 @@
         }
     }
 }
+
+
+@media screen and (max-width: 950px) {
+
+    .movements {
+
+        table {
+            margin-top: 2rem;
+            font-size: .75rem;
+            th {
+                padding: 0 1rem;
+            }
+        }
+    }
+
+}
