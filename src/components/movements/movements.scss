@@ -1,0 +1,13 @@
+.movements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    table {
+        margin-top: 6rem;
+        text-align: center;
+        th {
+            padding: 0 5rem;
+        }
+    }
+}

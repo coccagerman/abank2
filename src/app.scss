@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn {
+    border: none !important;
+    border-radius: .75rem;
+    font-size: 1.5rem !important;
+    padding: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-primary {
+    background-color: #266FF5 !important;
+    color: white !important;
+}
+
+.btn-secondary {
+    background-color: #44FFD4 !important;
+    color: black !important;
+}
+
+.btn-tertiary {
+    background-color: #d0cde1 !important;
+    color: black !important;
+}
+
+.disabled {
+    background-color: #ccc !important;
+    color: rgb(36, 35, 35) !important;
+
+    &:hover {
+        color: rgb(36, 35, 35);
+    }
+}
+
+@import '~bootstrap/scss/bootstrap';
+@import './components/header/header.scss';
+@import './components/header/menu/menu.scss';
+@import './components/home/home.scss';
+@import './components/deposit/deposit.scss';
+@import './components/deposit/depositModal/depositModal.scss';
+@import './components/transfer/transfer.scss';
+@import './components/transfer/contact/contact.scss';
+@import './components/transferConfirmation/transferConfirmation.scss';
+@import './components/transferConfirmation/tranferModal/transferModal.scss';
+@import './components/movements/movements.scss';

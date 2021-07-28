@@ -1,0 +1,52 @@
+.deposit {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+        width: 10rem;
+    }
+
+    form {
+        .formInput {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            label {
+                font-size: 2rem;
+            }
+
+            input {
+                font-size: 3rem;
+                width: 15rem;
+                border: none;
+                border-bottom: 1px #44FFD4 solid;
+            }
+
+            .amountInput {
+                display: flex;
+                font-size: 3rem;
+                margin-top: .5rem;
+                input {
+                    text-align: center;
+                }
+            }
+
+            select {
+                text-align: center;
+                font-size: 3rem;
+                width: 20rem;
+                border: none;
+            }
+        }
+    }
+
+    .btn-primary {
+        margin-top: 2rem;
+    }
+}

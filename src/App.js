@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.scss'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Header from './components/header/Header'
+import Home from './components/home/Home'
+import Deposit from './components/deposit/Deposit'
+import Transfer from './components/transfer/Transfer'
+import Movements from './components/movements/Movements'
+import Confirmation from './components/transferConfirmation/TransferConfirmation'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+        <Header />
+        <Switch>
+        
+          <Route path='/' exact>
+            <Home />
+          </Route>
 
-export default App;
+          <Route path='/deposit' exact>
+            <Deposit />
+          </Route>
+
+          <Route path='/transfer' exact>
+            <Transfer />
+          </Route>
+
+          <Route path='/transfer/:contactId'>
+            <Confirmation />
+          </Route>
+
+          <Route path='/movements' exact>
+            <Movements />
+          </Route>
+
+        </Switch>
+    </Router>
+  )
+}

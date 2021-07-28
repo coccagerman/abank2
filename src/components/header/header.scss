@@ -1,0 +1,63 @@
+header {
+    background-color: #266FF5;
+    height: 3.5rem;
+    position: relative;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        padding: .15rem 0 0 4rem;
+
+        .logo {
+            width: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: white;
+            font-size: 2rem;
+            margin-left: .25rem;
+            
+        }
+    }
+
+    .hamburguer-icon {
+        cursor: pointer;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        margin: auto;
+        z-index: 3;
+
+        .line {
+            background-color: white;
+            border-radius: .5rem;
+            width: 35px;
+            height: 5px;
+            margin-bottom: 8px;
+            transition: .5s;
+        }
+
+        .top {
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            top: 15px;
+            position: relative;
+        }
+
+        .center {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s 0,3s, opacity 2s linear;
+        }
+            
+        .bottom {
+            -ms-transform: rotate(140deg);
+            -webkit-transform: rotate(140deg);
+            transform: rotate(45deg);
+            top: -11px;
+            position: relative;
+        }
+    }
+}

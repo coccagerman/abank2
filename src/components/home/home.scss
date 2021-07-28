@@ -1,0 +1,16 @@
+.home {
+    margin-top: 10rem;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    button {
+        margin: 1rem 0;
+        width: 15rem;
+    }
+}

@@ -1,0 +1,12 @@
+.transferModal {
+    .header, .body, .footer {
+        border: none;
+    }
+
+    .body {
+        text-align: center;
+        font-size: 2rem;
+        max-width: 18rem;
+        margin: 0 auto;
+    }
+}

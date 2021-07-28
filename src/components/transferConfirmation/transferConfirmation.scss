@@ -1,0 +1,33 @@
+.transferConfirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .amountInput {
+        margin: 5rem 0 3rem 0;
+        display: flex;
+        align-items: center;
+        font-size: 4rem;
+
+        input {
+            width: 15rem;
+            border: none;
+            border-bottom: 1px #44FFD4 solid;
+            text-align: center;
+        }
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    button {
+        margin-top: 3rem;
+    }
+
+    .errorMsg {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+}
